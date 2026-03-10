@@ -1,14 +1,236 @@
-
 <!DOCTYPE html>
-
-<html>
+<html lang="id">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>belajar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Alya Wijayanti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
 </head>
-<body>
-  <h1>
-    Hellosaya alya wijayanti
-  </h1>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold gradient-text">AW.</span>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#education" class="hover:text-blue-600 transition">Pendidikan</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Keahlian</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition">Testimoni</a>
+            </div>
+            <a href="mailto:alyaliya002@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition">Kontak Saya</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Halo, Saya</h2>
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Alya Wijayanti</h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Siswa SMK Al Irsyad Al Islamiyyah Haurgeulis yang antusias mencari hal-hal baru dan memiliki minat besar di bidang bisnis UMKM.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#about" class="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 transition">Pelajari Lebih Lanjut</a>
+                    <div class="flex items-center gap-3 text-slate-600 px-4">
+                        <i class="fas fa-envelope text-blue-600"></i>
+                        <span>alyaliya002@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <!-- Gambar Profil Pengguna -->
+                    <img src="Gemini_Generated_Image_xku9c2xku9c2xku9.jpg" alt="Foto Alya Wijayanti" class="relative rounded-2xl w-64 md:w-80 shadow-2xl object-cover aspect-[3/4]" onerror="this.src='https://via.placeholder.com/400x533?text=Alya+Wijayanti'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biografi Section -->
+    <section id="about" class="py-20 bg-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Biografi Singkat</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                    <p class="text-slate-700 leading-relaxed text-lg italic">
+                        "Saya kelahiran tahun 2007. Umur saya sekarang adalah 18 tahun. Memiliki semangat tinggi untuk terus belajar dan berkontribusi di dunia profesional dan kewirausahaan."
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600"><i class="fas fa-search"></i></div>
+                        <div>
+                            <h3 class="font-bold">Hobi Eksplorasi</h3>
+                            <p class="text-slate-600">Gemar mencari hal-hal baru untuk pengembangan diri.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-purple-100 p-3 rounded-lg text-purple-600"><i class="fas fa-store"></i></div>
+                        <div>
+                            <h3 class="font-bold">Minat UMKM</h3>
+                            <p class="text-slate-600">Tertarik mendalami strategi bisnis usaha mikro, kecil, dan menengah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan Section -->
+    <section id="education" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Riwayat Pendidikan</h2>
+            <div class="relative border-l-2 border-blue-200 ml-4 md:ml-0">
+                <!-- SMK -->
+                <div class="mb-10 ml-6 relative">
+                    <div class="absolute -left-[31px] mt-1 bg-blue-600 w-4 h-4 rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-bold text-blue-600">2023 - 2026</span>
+                    <h3 class="text-xl font-bold mt-1">SMK Al Irsyad Al Islamiyyah Haurgeulis</h3>
+                    <p class="text-slate-600">Siswa Aktif</p>
+                </div>
+                <!-- MTS -->
+                <div class="mb-10 ml-6 relative">
+                    <div class="absolute -left-[31px] mt-1 bg-slate-300 w-4 h-4 rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-bold text-slate-500">2020 - 2023</span>
+                    <h3 class="text-xl font-bold mt-1">MTS Maharesi Siddiq Wanantara</h3>
+                    <p class="text-slate-600">Lulusan Terbaik</p>
+                </div>
+                <!-- SD -->
+                <div class="ml-6 relative">
+                    <div class="absolute -left-[31px] mt-1 bg-slate-300 w-4 h-4 rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-bold text-slate-500">2014 - 2020</span>
+                    <h3 class="text-xl font-bold mt-1">SD Negeri Kenanga</h3>
+                    <p class="text-slate-600">Siswa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian Section -->
+    <section id="skills" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Keahlian & Kompetensi</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="text-4xl text-blue-600 mb-6"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Microsoft Office</h3>
+                    <p class="text-slate-600">Mampu mengoperasikan Word, Excel, dan PowerPoint untuk keperluan administratif dan presentasi.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="text-4xl text-green-600 mb-6"><i class="fas fa-microphone-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Public Speaking</h3>
+                    <p class="text-slate-600">Memiliki kemampuan komunikasi publik yang baik untuk menyampaikan ide dan presentasi.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition duration-300 border border-slate-100">
+                    <div class="text-4xl text-purple-600 mb-6"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Kerjasama Tim</h3>
+                    <p class="text-slate-600">Berpengalaman dalam berkolaborasi dalam kelompok untuk mencapai tujuan bersama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Testimoni & Komentar</h2>
+            <p class="text-slate-600 text-center mb-12">Berikan masukan atau pesan singkat untuk saya.</p>
+            
+            <!-- Comment Form -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-10">
+                <div class="flex flex-col gap-4">
+                    <input type="text" id="guestName" placeholder="Nama Anda (atau ketik 'Guest')" class="w-full p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none">
+                    <textarea id="guestMessage" placeholder="Tulis pesan Anda di sini..." rows="3" class="w-full p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+                    <button onclick="addComment()" class="bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">Kirim Komentar</button>
+                </div>
+            </div>
+
+            <!-- Comment List -->
+            <div id="commentList" class="space-y-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xs">G</div>
+                        <span class="font-bold text-sm">Guest</span>
+                        <span class="text-slate-400 text-xs">10 Maret 2026</span>
+                    </div>
+                    <p class="text-slate-600 text-sm">Semangat terus belajarnya Alya! Portofolionya bagus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 text-white text-center px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6">Alya Wijayanti</h2>
+            <div class="flex justify-center gap-6 mb-8 text-xl">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:alyaliya002@gmail.com" class="hover:text-blue-400"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-slate-500 text-sm">&copy; 2026 Alya Wijayanti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addComment() {
+            const nameInput = document.getElementById('guestName');
+            const messageInput = document.getElementById('guestMessage');
+            const commentList = document.getElementById('commentList');
+
+            if (nameInput.value.trim() === "" || messageInput.value.trim() === "") {
+                const toast = document.createElement('div');
+                toast.className = "fixed bottom-5 right-5 bg-red-500 text-white px-6 py-3 rounded-lg shadow-xl z-[100]";
+                toast.innerText = "Mohon isi nama dan pesan Anda.";
+                document.body.appendChild(toast);
+                setTimeout(() => toast.remove(), 3000);
+                return;
+            }
+
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+            
+            const newComment = document.createElement('div');
+            newComment.className = "bg-white p-5 rounded-xl border border-slate-100 shadow-sm animate-fade-in";
+            newComment.innerHTML = `
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xs">${nameInput.value.charAt(0).toUpperCase()}</div>
+                    <span class="font-bold text-sm">${nameInput.value}</span>
+                    <span class="text-slate-400 text-xs">${dateStr}</span>
+                </div>
+                <p class="text-slate-600 text-sm">${messageInput.value}</p>
+            `;
+
+            commentList.prepend(newComment);
+            
+            // Clear inputs
+            nameInput.value = "";
+            messageInput.value = "";
+        }
+    </script>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+    </style>
 </body>
 </html>
+
+
